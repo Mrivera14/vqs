@@ -1,4 +1,13 @@
 Lovevqs::Application.routes.draw do
+  get 'sections/share'
+  root :to => 'sections#home'
+
+  get "sections/todo"
+
+  get "sections/getthere"
+
+ 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
