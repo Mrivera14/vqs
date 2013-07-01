@@ -1,5 +1,8 @@
 Lovevqs::Application.routes.draw do
+  devise_for :users
+
   get 'sections/share'
+  
   root :to => 'sections#home'
 
   get "sections/todo"

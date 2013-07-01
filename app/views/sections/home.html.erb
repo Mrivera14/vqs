@@ -1,5 +1,21 @@
+  <% if user_signed_in? %>
+    <h1>You' re logged in! to your account at <strong>I Love VQS</strong></h1>
+  <% else %>
   <div class="hero-unit">
   <h1>Welcome to I Love VQS</h1>
   <p>A travel guide for the island of Vieques, Puerto Rico.</p>
-  <p><%= link_to "Sign Up", "#", class: "btn btn-primary btn-large" %></p>
+  <p><%= link_to "Sign Up", new_user_session_path, class: "btn btn-primary btn-large" %></p>
   </div>
+  <div class="row">
+    <div class="span6">
+    <h3>Trip Advisor API</h3>
+     <p>The glowing Mosquito Bay is a vision of bizarre beauty. Thanks to a bioluminescent microorganism, the water is a cool electric blue, looking somewhat like a fantastical sci-fi lagoon. Kayak or hop into a clear-bottomed pontoon boat to glide along the neon waters.</p> 
+    </div>
+    <div class="span6">
+     <h3>Vieques, Puerto Rico<br/>
+         Sunday 11:00 PM<br/>
+         Mostly Cloudy</h3> 
+     <p>The weather is great in Vieques Island, Puerto Rico. Weather changes in Vieques throughout the year with rain months and hurricane seasons.</p> 
+    </div>
+  </div>
+<% end %>
