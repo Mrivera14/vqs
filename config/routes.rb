@@ -12,7 +12,7 @@ Lovevqs::Application.routes.draw do
 
   get 'sections/share'
   
-  root :to => 'sections#home'
+  root :to => 'pins#index'
 
   get "sections/todo"
 

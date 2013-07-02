@@ -1,0 +1,17 @@
+  <% if user_signed_in? %>
+    <h1>You' re logged in! to your account at <strong>I Love VQS</strong></h1>
+  <% else %>
+  <div class="hero-unit">
+  <h1>Welcome to I Love VQS</h1>
+  <p>A travel guide for the island of Vieques, Puerto Rico.</p>
+  <p><%= link_to "Sign Up", new_user_session_path, class: "btn btn-primary btn-large" %></p>
+  </div>
+  <div class="row">
+    <div class="span6"><h3>Trip Advisor API</h3>
+     <p>The glowing Mosquito Bay is a vision of bizarre beauty.</p>
+   </div>
+    <div class="span6 pull-right"><h3>Current Weather</h3>
+     <p><big>73</big><sup>&deg;</sup> &amp; Parcialy cloudy</p>
+   </div>
+  </div>
+<% end %>
