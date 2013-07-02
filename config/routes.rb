@@ -1,4 +1,13 @@
 Lovevqs::Application.routes.draw do
+  resources :pins
+
+
+  resources :stories
+
+
+  resources :posts
+
+
   devise_for :users
 
   get 'sections/share'
