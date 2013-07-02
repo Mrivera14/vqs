@@ -15,9 +15,39 @@ body{
     border: 0;
 }
 .footer {
-    margin-top:15px;
+    clear: both;
+    margin-top:20px;
     color: $grayLight;
     a {
         color: $gray;
     }
+}
+
+/* Required for jQuery Masonry */
+
+.box {
+    margin: 5px;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 1.4em;
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px #999;
+    width: 214px;
+}
+
+.box img {
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.description {
+    margin: 10px 0 6px;
+}
+.pin-title{
+    margin: 10px 10px 0 0;
 }
